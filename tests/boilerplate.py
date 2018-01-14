@@ -59,8 +59,12 @@ class Boilerplate:
 		assert x is not None if t is None else not isinstance(x, t)
 
 	@staticmethod
-	def is_none(x):
-		assert x is None
+	def is_a(x, y):
+		assert x is y
+
+	@staticmethod
+	def not_is_a(x, y):
+		assert x is not y
 
 # def raises_err(self, arg, err=Exception):
 # 	with pytest.raises(err):
