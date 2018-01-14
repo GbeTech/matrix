@@ -44,28 +44,24 @@ class Boilerplate:
 
 	@staticmethod
 	def is_equal(x, y):
-		assert x == y
+		assert x == y, "is_equal failed: {} != {}".format(x, y)
 
 	@staticmethod
 	def not_is_equal(x, y):
-		assert x != y
+		assert x != y, f"not_is_equal failed: {x} == {y}"
 
 	@staticmethod
 	def is_instance(x, t):
-		assert x is None if t is None else isinstance(x, t)
+		assert x is None if t is None else isinstance(x, t), f"is_instance failed: not isinstance({x},{t})"
 
 	@staticmethod
 	def not_is_instance(x, t):
-		assert x is not None if t is None else not isinstance(x, t)
+		assert x is not None if t is None else not isinstance(x, t), f"not_is_instance failed: isinstance({x},{t})"
 
 	@staticmethod
 	def is_a(x, y):
-		assert x is y
+		assert x is y, "is_a failed: {} is not {}".format(x, y)
 
 	@staticmethod
 	def not_is_a(x, y):
-		assert x is not y
-
-# def raises_err(self, arg, err=Exception):
-# 	with pytest.raises(err):
-# 		arg / 0
+		assert x is not y, f"not_is_a failed: {x} is {y}"

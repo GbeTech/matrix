@@ -1,6 +1,5 @@
 from typing import List, Union
 from helpers import strhelp
-from warnings import warn
 
 
 # TODO: Custom index titles
@@ -35,6 +34,10 @@ class Vector:
 	def __eq__(self, other):
 		return self.value == other
 
+	def __str__(self):
+		ret = ''.join(str(i) for i in self.value)
+		return ret
+
 	def append(self, value):
 		self.value.append(value)
 
@@ -64,7 +67,7 @@ class Matrix:
 		return len(value) if any(isinstance(i, list) for i in value) else 1
 
 	def _get_col_count(self, value_raw, value_depth):
-		warn("DO ITERATIVE INSTEAD OF RECURSIVE '_get_col_count'")
+		# warn("DO ITERATIVE INSTEAD OF RECURSIVE '_get_col_count'")
 		col_count = 0
 		if value_depth == 0:
 			col_count = 1
@@ -128,7 +131,7 @@ class Matrix:
 
 	def _get_nesting_depth(self, value):
 		# TODO: unequal depths, i.e. [1,[a,b,c]]
-		warn("DO ITERATIVE INSTEAD OF RECURSIVE '_get_nesting_depth'")
+		# warn("DO ITERATIVE INSTEAD OF RECURSIVE '_get_nesting_depth'")
 		depth_count = 0
 		if isinstance(value, list):
 			depth_count += 1
@@ -312,7 +315,7 @@ class Matrix:
 		"""Get the length of the longest item.
 		 Agnostic to number of dimensions"""
 		# TODO: Do iterative instead of recursive
-		warn("CHANGE '_get_max_item_len' to ITERATIVE")
+		# warn("CHANGE '_get_max_item_len' to ITERATIVE")
 		max_len = 0
 		if isinstance(value, list):
 			if value:

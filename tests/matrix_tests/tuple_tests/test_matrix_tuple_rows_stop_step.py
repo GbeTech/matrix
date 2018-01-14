@@ -1,11 +1,11 @@
-from ..boilerplate import Boilerplate
+from ...boilerplate import Boilerplate
 from src.matrix import Vector
 
 bp = Boilerplate()
 
 
 def test_colon_1_colon_1():
-	bp.basic_test(res=bp.m[:1:1],
+	bp.basic_test(res=bp.m[:1:1, :],
 	                 expected=['A', 'B', 'C', 'D', None],
 	                 res_type=Vector)
 
