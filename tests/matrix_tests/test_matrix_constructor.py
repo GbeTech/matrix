@@ -8,13 +8,13 @@ bp = Boilerplate()
 def test_init_0D():
 	bp.basic_test(res=Matrix("A"),
 	              expected="A",
-	              res_type=str)
+	              res_type=Matrix)
 
 
 def test_init_1D():
 	bp.basic_test(res=Matrix(["A", "B"]),
-	              expected=[["A", "B"]],
-	              res_type=Vector)
+	              expected=["A", "B"],
+	              res_type=Matrix)
 
 
 def test_init_2D():
@@ -22,4 +22,4 @@ def test_init_2D():
 	                          ["C", "D"]]),
 	              expected=[["A", "B"],
 	                        ["C", "D"]],
-	              res_type=list)
+	              res_type=Matrix)
