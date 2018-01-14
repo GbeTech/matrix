@@ -1,7 +1,7 @@
 from src.matrix import Matrix, Vector
 
 
-class Setup:
+class Boilerplate:
 	def __init__(self):
 		self.m1 = Matrix([[1, 123124142, 143, 46545],
 		                  [5, 6, 7, 8],
@@ -52,11 +52,15 @@ class Setup:
 
 	@staticmethod
 	def is_instance(x, t):
-		assert isinstance(x, t)
+		assert x is None if t is None else isinstance(x, t)
 
 	@staticmethod
 	def not_is_instance(x, t):
-		assert not isinstance(x, t)
+		assert x is not None if t is None else not isinstance(x, t)
+
+	@staticmethod
+	def is_none(x):
+		assert x is None
 
 # def raises_err(self, arg, err=Exception):
 # 	with pytest.raises(err):
