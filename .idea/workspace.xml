@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5cc688f-8518-4b4f-b0c8-b5a901f137a3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_rows_start.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_rows_start_step.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_rows_start_stop.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_rows_start_stop_step.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_rows_step.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_rows_stop.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_rows_stop_step.py" afterPath="" />
-    </list>
+    <list default="true" id="b5cc688f-8518-4b4f-b0c8-b5a901f137a3" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +15,7 @@
         <entry file="file://$PROJECT_DIR$/src/matrix.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
-              <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+              <caret line="217" column="33" lean-forward="false" selection-start-line="217" selection-start-column="33" selection-end-line="217" selection-end-column="33" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
                 <element signature="e#4325#4393#1" expanded="true" />
@@ -146,8 +138,8 @@
         <option value="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_start_stop.py" />
         <option value="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_step.py" />
         <option value="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_stop.py" />
-        <option value="$PROJECT_DIR$/src/matrix.py" />
         <option value="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_stop_step.py" />
+        <option value="$PROJECT_DIR$/src/matrix.py" />
       </list>
     </option>
   </component>
@@ -744,7 +736,7 @@
     <entry file="file://$PROJECT_DIR$/src/matrix.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
-          <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+          <caret line="217" column="33" lean-forward="false" selection-start-line="217" selection-start-column="33" selection-end-line="217" selection-end-column="33" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
             <element signature="e#4325#4393#1" expanded="true" />
