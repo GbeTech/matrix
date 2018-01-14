@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5cc688f-8518-4b4f-b0c8-b5a901f137a3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns_start.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns_start_step.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns_start_stop.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns_step.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns_stop.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns_stop_step.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_start.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_start_step.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_start_stop.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_start_stop_step.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_step.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_stop_step.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/tuples.BAK" afterPath="" />
-    </list>
+    <list default="true" id="b5cc688f-8518-4b4f-b0c8-b5a901f137a3" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +24,8 @@
       <file leaf-file-name="test_matrix_tuple_rows_stop.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_stop.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="848">
-              <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="424">
+              <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -181,7 +164,6 @@
         <option value="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows.py.ipynb" />
         <option value="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows.py" />
         <option value="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_start.py" />
-        <option value="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_stop.py" />
         <option value="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_start_stop.py" />
         <option value="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_step.py" />
         <option value="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_start_step.py" />
@@ -195,6 +177,7 @@
         <option value="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns_start_step.py" />
         <option value="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns_stop_step.py" />
         <option value="$PROJECT_DIR$/tests/matrix_tests/tuples.py" />
+        <option value="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_stop.py" />
       </list>
     </option>
   </component>
@@ -843,8 +826,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_stop.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="848">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="424">
+          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
