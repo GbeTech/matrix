@@ -1,9 +1,3 @@
 ## What is it
 
-**pandas** is a Python package providing fast, flexible, and expressive data
-structures designed to make working with "relational" or "labeled" data both
-easy and intuitive. It aims to be the fundamental high-level building block for
-doing practical, **real world** data analysis in Python. Additionally, it has
-the broader goal of becoming **the most powerful and flexible open source data
-analysis / manipulation tool available in any language**. It is already well on
-its way toward this goal.
+**table** is a minimal Python 2-Dimensional container. I got frustrated with how unnecessarily awkward the usage of numpy's ndarray or pandas' DataFrame is, especially when all I wanted is a python equivalent for a `list`. So I made one.
