@@ -35,6 +35,8 @@ class Vector:
 		return self.value == other
 
 	def __str__(self):
+		if any(isinstance(i, Vector) for i in self.value) and len(self.value) >= 2:
+			raise NotImplementedError
 		ret = ''.join(str(i) for i in self.value)
 		return ret
 
