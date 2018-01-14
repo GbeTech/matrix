@@ -1,5 +1,6 @@
 from typing import List, Union
 from helpers import strhelp
+from warnings import warn
 
 
 # TODO: Custom index titles
@@ -56,13 +57,14 @@ class Matrix:
 		self.row_count = self._get_row_count(self.value_raw)
 
 	def _get_raw_from_value(self, value) -> List[Union[str, int]]:
-		raise NotImplementedError
+		raise NotImplementedError("_get_raw_from_value")
 
 	@staticmethod
 	def _get_row_count(value):
 		return len(value) if any(isinstance(i, list) for i in value) else 1
 
 	def _get_col_count(self, value_raw, value_depth):
+		warn("DO ITERATIVE INSTEAD OF RECURSIVE '_get_col_count'")
 		col_count = 0
 		if value_depth == 0:
 			col_count = 1
@@ -126,6 +128,7 @@ class Matrix:
 
 	def _get_nesting_depth(self, value):
 		# TODO: unequal depths, i.e. [1,[a,b,c]]
+		warn("DO ITERATIVE INSTEAD OF RECURSIVE '_get_nesting_depth'")
 		depth_count = 0
 		if isinstance(value, list):
 			depth_count += 1
@@ -308,6 +311,8 @@ class Matrix:
 	def _get_max_item_len(self, value):
 		"""Get the length of the longest item.
 		 Agnostic to number of dimensions"""
+		# TODO: Do iterative instead of recursive
+		warn("CHANGE '_get_max_item_len' to ITERATIVE")
 		max_len = 0
 		if isinstance(value, list):
 			if value:
@@ -321,12 +326,13 @@ class Matrix:
 
 		return max_len
 
+
 # if __name__ == '__main__.matrix':
 # 	Matrix()
 # m4 = Matrix(["A", "B"])
 # print(m4.row_count)
-# m = Matrix()
-# print(m[1, :])
+m = Matrix()
+print(m)
 # print(m4.transform())
 # print(m4[0, 0])
 # print(m4[:-2])
