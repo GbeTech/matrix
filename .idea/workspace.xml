@@ -2,32 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5cc688f-8518-4b4f-b0c8-b5a901f137a3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/Features.txt" afterPath="$PROJECT_DIR$/src/Features.txt" />
-      <change beforePath="$PROJECT_DIR$/src/matrix.py" afterPath="$PROJECT_DIR$/src/matrix.py" />
-      <change beforePath="$PROJECT_DIR$/tests/boilerplate.py" afterPath="$PROJECT_DIR$/tests/boilerplate.py" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_slicers_start.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_slicers_start_step.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_slicers_start_stop.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_slicers_start_stop_step.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_slicers_step.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_slicers_stop.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_slicers_stop_step.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns.SKIP" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns_start.SKIP" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns_start_step.SKIP" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns_start_stop.SKIP" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns_step.SKIP" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns_stop.SKIP" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_columns_stop_step.SKIP" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows.SKIP" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_start.SKIP" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_start_step.SKIP" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_start_stop.SKIP" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_start_stop_step.SKIP" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_step.SKIP" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_stop.SKIP" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/test_matrix_tuple_rows_stop_step.SKIP" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_start_stop.py" afterPath="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_start_stop.py" />
+      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_step.py" afterPath="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_step.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,12 +39,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_matrix_tuple_columns_start_step.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_start_step.py">
+      <file leaf-file-name="test_matrix_tuple_columns_step.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_step.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="38" />
-              <folding />
+            <state relative-caret-position="249">
+              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,6 +139,8 @@
         <option value="$PROJECT_DIR$/tests/boilerplate.py" />
         <option value="$PROJECT_DIR$/src/matrix.py" />
         <option value="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_start_step.py" />
+        <option value="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_start_stop.py" />
+        <option value="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_step.py" />
       </list>
     </option>
   </component>
@@ -248,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev2_dcolon_rev2">
+  <component name="RunManager" selected="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_get_shallow_copy">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -339,7 +319,7 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_1_dcolon_2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_stop.test_rev3_colon_rev1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -351,10 +331,10 @@
       <module name="matrix" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_1_dcolon_2&quot;" />
+      <option name="_new_target" value="&quot;tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_stop.test_rev3_colon_rev1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_1_dcolon_rev1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -366,10 +346,10 @@
       <module name="matrix" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_1_dcolon_rev1&quot;" />
+      <option name="_new_target" value="&quot;tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev2_dcolon_rev1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -381,10 +361,10 @@
       <module name="matrix" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev2_dcolon_rev1&quot;" />
+      <option name="_new_target" value="&quot;tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_2&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev2_dcolon_rev2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_rev1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -396,10 +376,10 @@
       <module name="matrix" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev2_dcolon_rev2&quot;" />
+      <option name="_new_target" value="&quot;tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_rev1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev3_dcolon_rev2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_get_shallow_copy" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -411,23 +391,23 @@
       <module name="matrix" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev3_dcolon_rev2&quot;" />
+      <option name="_new_target" value="&quot;tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_get_shallow_copy&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_1_dcolon_2" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_1_dcolon_rev1" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev3_dcolon_rev2" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev2_dcolon_rev1" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev2_dcolon_rev2" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_stop.test_rev3_colon_rev1" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_1" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_2" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_rev1" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_get_shallow_copy" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev2_dcolon_rev2" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev2_dcolon_rev1" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_1_dcolon_rev1" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev3_dcolon_rev2" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_1_dcolon_2" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_get_shallow_copy" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_rev1" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_2" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_1" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_stop.test_rev3_colon_rev1" />
       </list>
     </recent_temporary>
   </component>
@@ -448,42 +428,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_start_step_test_1_dcolon_rev1 - 2018.01.14 at 19h 35m 47s.xml">
-      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_1_dcolon_rev1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_start_step_test_1_dcolon_rev1 - 2018.01.14 at 19h 37m 07s.xml">
-      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_1_dcolon_rev1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_start_step_test_rev2_dcolon_rev1 - 2018.01.14 at 19h 35m 49s.xml">
-      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev2_dcolon_rev1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_start_step_test_rev2_dcolon_rev1 - 2018.01.14 at 19h 36m 37s.xml">
-      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev2_dcolon_rev1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_start_step_test_rev2_dcolon_rev1 - 2018.01.14 at 19h 48m 07s.xml">
-      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev2_dcolon_rev1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_start_step_test_rev2_dcolon_rev1 - 2018.01.14 at 19h 57m 27s.xml">
-      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev2_dcolon_rev1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_start_step_test_rev2_dcolon_rev1 - 2018.01.14 at 19h 58m 29s.xml">
-      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev2_dcolon_rev1" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_start_step_test_rev2_dcolon_rev2 - 2018.01.14 at 19h 59m 08s.xml">
       <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev2_dcolon_rev2" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_start_step_test_rev3_dcolon_rev2 - 2018.01.14 at 19h 30m 13s.xml">
-      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev3_dcolon_rev2" configurationId="tests" />
+    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_start_stop_test_0_colon_rev2 - 2018.01.14 at 20h 00m 06s.xml">
+      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_stop.test_0_colon_rev2" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_start_step_test_rev3_dcolon_rev2 - 2018.01.14 at 19h 35m 41s.xml">
-      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_step.test_rev3_dcolon_rev2" configurationId="tests" />
+    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_start_stop_test_rev1_colon_3 - 2018.01.14 at 20h 00m 08s.xml">
+      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_stop.test_rev1_colon_3" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_start_stop_test_rev3_colon_rev1 - 2018.01.14 at 20h 00m 10s.xml">
+      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_start_stop.test_rev3_colon_rev1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_step_test_dcolon_1 - 2018.01.14 at 20h 00m 15s.xml">
+      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_step_test_dcolon_2 - 2018.01.14 at 20h 00m 16s.xml">
+      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_step_test_dcolon_rev1 - 2018.01.14 at 20h 00m 18s.xml">
+      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_rev1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_step_test_dcolon_rev1 - 2018.01.14 at 20h 01m 37s.xml">
+      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_dcolon_rev1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_step_test_get_shallow_copy - 2018.01.14 at 20h 01m 40s.xml">
+      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_get_shallow_copy" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_for_tests_matrix_tests_tuple_tests_test_matrix_tuple_columns_step_test_get_shallow_copy - 2018.01.14 at 20h 02m 00s.xml">
+      <configuration name="py.test for tests.matrix_tests.tuple_tests.test_matrix_tuple_columns_step.test_get_shallow_copy" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="1989" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2095666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36495772" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299262" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1949306" sideWeight="0.26554948" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -543,20 +523,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../TEMP/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../TEMP/matrix_tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_matrix/matrix_tests.py" />
     <entry file="file://$PROJECT_DIR$/../matrix_2/src/happ.py" />
     <entry file="file://$PROJECT_DIR$/../matrix_2/tests/setup_light.py" />
@@ -700,6 +666,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_start_step.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_start_stop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="602">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tests/boilerplate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
@@ -710,11 +694,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_start_step.py">
+    <entry file="file://$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_columns_step.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="249">
+          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
