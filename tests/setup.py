@@ -1,0 +1,63 @@
+from src.matrix import Matrix, Vector
+
+
+class Setup:
+	def __init__(self):
+		self.m1 = Matrix([[1, 123124142, 143, 46545],
+		                  [5, 6, 7, 8],
+		                  [10, 1211, 12, 1321, 146436]])
+		# mag=6 c=5 r=3
+		self.m2 = Matrix([[80, 8, 8, 8],
+		                  [8, 8000, 80000, 8, 2],
+		                  [8, 8, 8, 800000]])
+		# mag=1 c=4 r=3
+		self.m3 = Matrix([[8, 8, 8, 8],
+		                  [8, 8, 8, 8],
+		                  [8, 8, 8, 8]])
+
+		# mag=5 c=4 r=3
+		self.m4 = Matrix([[8, 8, 8, 8],
+		                  [8, 8, 8, 8],
+		                  [8, 8, 8, 8],
+		                  [80, 800, 8000, 80000]])
+
+		self.m5 = Matrix([[1, 123124142, 143, 46545, 5, 1, 2],
+		                  [5, 6, 7, 8],
+		                  [10, 1211, 12, 1321, 146436]])
+
+		self.m = Matrix([['A', 'B', 'C', 'D', None],
+		                 ['E', 'F', 'G', 'H', 'I'],
+		                 ['J', 'K', 'L', 'M', None]])
+
+	def basic_test(self, res, expected, res_type, index_type_pairs: dict = None):
+		self.is_equal(res, expected)
+
+		self.is_instance(res, res_type)
+
+		if res_type is list:
+			for v in res:
+				self.is_instance(v, Vector)
+
+		if index_type_pairs is not None:
+			for k, v in index_type_pairs.items():
+				self.is_instance(res[k], v)
+
+	@staticmethod
+	def is_equal(x, y):
+		assert x == y
+
+	@staticmethod
+	def not_is_equal(x, y):
+		assert x != y
+
+	@staticmethod
+	def is_instance(x, t):
+		assert isinstance(x, t)
+
+	@staticmethod
+	def not_is_instance(x, t):
+		assert not isinstance(x, t)
+
+# def raises_err(self, arg, err=Exception):
+# 	with pytest.raises(err):
+# 		arg / 0

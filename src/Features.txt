@@ -1,0 +1,61 @@
+      0   1   2   3   4
+      -   -   -   -   -
+0   - A   B   C   D   NONE
+1   - E   F   G   H   I
+2   - J   K   L   M   NONE
+
+==
+T
+==
+      0     1   2
+      -     -   -   
+0   - A     E   J
+1   - B     F   K
+2   - C     G   L
+3   - D     H   M
+4   - None  I   None
+
+
+[0,0]           A
+
+[1,-1]          I
+
+[1]             [E   F   G   H   I]
+
+[:2]           [[A B   C   D   None],
+                [E  F   G   H   I]]
+
+[:-2]           [A B   C   D   None]
+
+[0][2:]         [C  D   None]
+
+[0][-2:]        [D None]
+
+[:][1]          [B F K]         Required transform
+
+[:][-1]         [None I None]
+
+[2][::2]        [J  L None]
+
+[:2][1:3]      [[B  C],
+                [F   G]]
+
+[::2][1:3]     [[B  C],
+                [K   L]]
+
+[::-1]          [[None  M L   K   J],
+                [I  H   G   F   E],
+                [None   D   C   B   A]]
+
+[1][:-1]        [E  F   G   H]
+
+[1][::-1]       [I  H   G   F   E]
+
+[1][:1:-2]       [I  G]
+
+[:-1][:2:-2]    [None   I]
+
+[:-1][:1:-2]    [[None   C],
+                 [I      G]]
+        
+
