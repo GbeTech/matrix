@@ -2,6 +2,9 @@ from typing import List, Union
 from helpers import strhelp
 
 
+# from .utils import transform
+
+
 # TODO: Custom index titles
 # TODO: Check unequal col/row lengths cases
 
@@ -28,8 +31,8 @@ class Vector:
 
 		return ret
 
-	def __iter__(self):
-		yield self.value
+	# def __iter__(self):
+	# 	yield self.value
 
 	def __eq__(self, other):
 		return self.value == other
@@ -158,6 +161,7 @@ class Matrix:
 		Return [...] if value is [[...]] (single list in a list)
 		"""
 		if isinstance(value, list) and len(value) == 1:
+			print("Removed redundant nesting")
 			ret = value[0]
 		else:
 			ret = value
@@ -188,15 +192,18 @@ class Matrix:
 
 		if isinstance(item, tuple):
 			(i, j) = item
-			# TODO: ACCOUNT FOR WHEN BOTH ARE SLICERS
 			# [:,1:3]
 			if isinstance(i, slice):
 				temp = self[i]
-				transformed = temp._get_transform()
-				ret = transformed[j]
+				slice_tup = i.start, i.stop, i.step
+				if all(sl is None for sl in slice_tup):
+					transposed = self.transpose(temp)
+					ret = transposed[j]
+				else:
+					ret = temp
+
 			# [1,:]
 			elif isinstance(j, slice):
-				# TODO: HACK, ACCOUNT FOR WHEN J HAS VALUES
 				slice_tup = j.start, j.stop, j.step
 				if all(sl is None for sl in slice_tup):
 					ret = self.matrix[i]
@@ -288,6 +295,7 @@ class Matrix:
 			col_ret.append(row[col_idx])
 		return col_ret
 
+	# no usage
 	def _get_transform_raw(self):
 		# TODO: try to prevent un/boxing, manipulate without extracting to raw etc
 		trans_values = []
@@ -301,17 +309,26 @@ class Matrix:
 
 		return trans_values
 
-	def _get_transform(self):
-		trans_values = []
-		for i in range(self.col_count):
-			trans_row = []
-			for j in range(self.row_count):
-				trans_row.append(self.value_raw[j][i])
-			trans_values.append(trans_row)
+	@staticmethod
+	def transpose(collection):
+		if isinstance(collection, Matrix):
+			ret = list(map(list, zip(*collection.value_raw)))
+		else:
+			ret = list(map(list, zip(*collection)))
+		return Matrix(ret)
 
-		trans_matrix = Matrix(trans_values)
-
-		return trans_matrix
+	# def _get_transpose(self):
+	#
+	# 	trans_values = []
+	# 	for i in range(self.col_count):
+	# 		trans_row = []
+	# 		for j in range(self.row_count):
+	# 			trans_row.append(self.value_raw[j][i])
+	# 		trans_values.append(trans_row)
+	#
+	# 	trans_matrix = Matrix(trans_values)
+	#
+	# 	return trans_matrix
 
 	def _get_max_item_len(self, value):
 		"""Get the length of the longest item.
