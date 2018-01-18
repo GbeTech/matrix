@@ -188,23 +188,34 @@ class Matrix:
 	# 	return value_raw
 
 	def __getitem__(self, item):
-		ret = None
 
+		# [?,?]
 		if isinstance(item, tuple):
 			(i, j) = item
-			# [:,1:3]
+
+			# [?:?:? , ?]
 			if isinstance(i, slice):
 				temp = self[i]
 				slice_tup = i.start, i.stop, i.step
+
+				# [: , :-1:2]
+				# #[['A', 'E', 'J'],
+				#  ['C', 'G', 'L']]
 				if all(sl is None for sl in slice_tup):
 					transposed = self.transpose(temp)
 					ret = transposed[j]
+
+				# [1:, :]
+				# [['E', 'F', 'G', 'H', 'I'],
+				# ['J', 'K', 'L', 'M', None]],
 				else:
 					ret = temp
 
-			# [1,:]
+			# [1 , ?:?:?]
 			elif isinstance(j, slice):
 				slice_tup = j.start, j.stop, j.step
+
+				# [1,:] ['E', 'F', 'G', 'H', 'I']
 				if all(sl is None for sl in slice_tup):
 					ret = self.matrix[i]
 				else:
@@ -212,21 +223,23 @@ class Matrix:
 
 			else:
 				ret = self.matrix[i][j]
+
+		# [?:?:?]
 		elif isinstance(item, slice):
 			slice_tup = item.start, item.stop, item.step
 
-			# If item is [:]
+			# [:]    SPECIAL CASE: shallow copy
 			if all(sl is None for sl in slice_tup):
 				from copy import copy
 				ret = copy(self)
-			# If item is [:n]
-			# elif slice_tup[0] is None:
+
+			# [-1:3:1] ['J', 'K', 'L', 'M', None]
 			else:
 				ret = self.matrix[item]
 				ret = self.remove_redundant_nesting(ret)
 
 
-
+		# [1] ['E', 'F', 'G', 'H', 'I']
 		else:
 			ret = self.matrix[item]
 
