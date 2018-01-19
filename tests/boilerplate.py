@@ -1,4 +1,4 @@
-from src.matrix import Matrix, Vector
+from src.matrix import Matrix
 
 
 class Boilerplate:
@@ -29,18 +29,18 @@ class Boilerplate:
 		                 ['E', 'F', 'G', 'H', 'I'],
 		                 ['J', 'K', 'L', 'M', None]])
 
-	def basic_test(self, res, expected, res_type, index_type_pairs: dict = None):
+	def basic_test(self, res, expected, res_type):
 		self.is_equal(res, expected)
 
 		self.is_instance(res, res_type)
 
-		if res_type is list:
-			for v in res:
-				self.is_instance(v, Vector)
+		# if res_type is list:
+		# 	for v in res:
+		# 		self.is_instance(v, Vector)
 
-		if index_type_pairs is not None:
-			for k, v in index_type_pairs.items():
-				self.is_instance(res[k], v)
+		# if index_type_pairs is not None:
+	# 	for k, v in index_type_pairs.items():
+	# 		self.is_instance(res[k], v)
 
 	@staticmethod
 	def is_equal(x, y):

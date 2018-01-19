@@ -1,7 +1,5 @@
 from ...boilerplate import Boilerplate
 
-# from src.matrix import Vector
-
 bp = Boilerplate()
 
 
@@ -19,4 +17,4 @@ def test_tuple_rev1_colon():
 	                        ['J', 'K', 'L', 'M', None]],
 	              res_type=list)
 
-	bp.not_is_equal(bp.m[-3:, :], bp.m)
+	bp.not_is_a(bp.m[-3:, :], bp.m)

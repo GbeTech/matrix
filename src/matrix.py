@@ -8,42 +8,42 @@ from helpers import strhelp
 # TODO: Custom index titles
 # TODO: Check unequal col/row lengths cases
 
-class Vector:
-	def __init__(self, value=None):
-		self.value = value if value is not None else []
-
-	def __setitem__(self, key, value):
-		print('set item!')
-
-	def __getitem__(self, item):
-		# if isinstance(item, slice):
-		#
-		# 	# If item is [:]
-		# 	if all(sl is None for sl in (item.start, item.stop, item.step)):
-		# 		raise NotImplementedError("got [:] for Vector")
-		#
-		# 	else:
-		# 		ret = self.value[item]
-		#
-		# else:
-		ret = self.value[item]
-		return ret
-
-	# def __iter__(self):
-	# 	yield self.value
-
-	def __eq__(self, other):
-		return self.value == other
-
-	def __str__(self):
-		if any(isinstance(i, Vector) for i in self.value) and len(self.value) >= 2:
-			raise NotImplementedError
-		ret = "Vector: " + ', '.join(str(i) for i in self.value)
-		return ret
-
-	# NO USAGE
-	def append(self, value):
-		self.value.append(value)
+# class Vector:
+# 	def __init__(self, value=None):
+# 		self.value = value if value is not None else []
+#
+# 	def __setitem__(self, key, value):
+# 		print('set item!')
+#
+# 	def __getitem__(self, item):
+# 		# if isinstance(item, slice):
+# 		#
+# 		# 	# If item is [:]
+# 		# 	if all(sl is None for sl in (item.start, item.stop, item.step)):
+# 		# 		raise NotImplementedError("got [:] for Vector")
+# 		#
+# 		# 	else:
+# 		# 		ret = self.value[item]
+# 		#
+# 		# else:
+# 		ret = self.value[item]
+# 		return ret
+#
+# 	# def __iter__(self):
+# 	# 	yield self.value
+#
+# 	def __eq__(self, other):
+# 		return self.value == other
+#
+# 	def __str__(self):
+# 		if any(isinstance(i, Vector) for i in self.value) and len(self.value) >= 2:
+# 			raise NotImplementedError
+# 		ret = "Vector: " + ', '.join(str(i) for i in self.value)
+# 		return ret
+#
+# 	# NO USAGE
+# 	def append(self, value):
+# 		self.value.append(value)
 
 
 class Matrix:
@@ -58,7 +58,7 @@ class Matrix:
 		self.value_raw = value
 
 		self.value_depth = self._get_nesting_depth(value)
-		self.matrix: List[Vector] = self._generate_matrix_from_value(value, self.value_depth)
+		self.matrix: List[list] = self._generate_matrix_from_value(value, self.value_depth)
 		self.col_count = self._get_col_count(value, self.value_depth)
 		# self.row_count = len(value) if value else 1
 		self.row_count = self._get_row_count(self.value_raw)
@@ -108,14 +108,14 @@ class Matrix:
 	# 		self.matrix.append(self.Row(value))
 
 	# test 5
-	def _generate_matrix_from_value(self, value, value_depth) -> List[Vector]:
-		matrix: List[Vector] = [[]]
+	def _generate_matrix_from_value(self, value, value_depth) -> List[list]:
+		matrix = [[]]
 		if value_depth == 0:
-			matrix[0].append(Vector(value))
+			matrix[0].append(value)
 		elif value_depth == 1:
-			matrix[0] = Vector(value)
+			matrix[0] = value
 		elif value_depth == 2:
-			matrix = [Vector(i) for i in value]
+			matrix = value
 		else:
 			value_2d = self._to_2d(value, value_depth)
 			matrix = value_2d
@@ -123,7 +123,8 @@ class Matrix:
 
 		return matrix
 
-	def _to_2d(self, value, value_depth=None) -> List[Vector]:
+	# NO USAGE
+	def _to_2d(self, value, value_depth=None) -> List[list]:
 		if value_depth is not None:
 			for d1 in value:
 				for d2 in value:
@@ -214,17 +215,21 @@ class Matrix:
 				# [['A', 'B', 'C'],
 				# ['E', 'F', 'G']]
 				else:
+					# [?,?,...]
 					if isinstance(temp, list):
-						for vec_idx, vec in enumerate(temp):
-							# TODO: NOT HACKY KAKY!!!
-							sliced = vec[j]
-							if isinstance(sliced, list):
-								temp[vec_idx].value = sliced
-							else:
-								temp[vec_idx] = sliced
-						ret = temp
+						# [[?],[?]] -> 2D
+						if any(isinstance(vec, list) for vec in temp):
+							for vec_idx, vec in enumerate(temp):
+								temp[vec_idx] = vec[j]
+						# [?,?] -> 1D
+						else:
+							temp = temp[j]
 					else:
-						ret = temp[j]
+						raise NotImplementedError('shouldnt happen')
+					ret = temp
+			# else:
+
+			# raise NotImplementedError('Shouldnt happen')
 
 			# [1 , ?:?:?]
 			elif isinstance(j, slice):
@@ -315,13 +320,14 @@ class Matrix:
 					        self.col_count == self._get_col_count(other, other_depth)) and (
 					        self.row_count == self._get_row_count(other)))
 
+	# NO USAGE
 	def _get_col_raw(self, col_idx):
 		col_ret = []
 		for row in self.value_raw:
 			col_ret.append(row[col_idx])
 		return col_ret
 
-	# no usage
+	# NO USAGE
 	def _get_transform_raw(self):
 		# TODO: try to prevent un/boxing, manipulate without extracting to raw etc
 		trans_values = []
@@ -356,6 +362,7 @@ class Matrix:
 	#
 	# 	return trans_matrix
 
+	# USAGE ONLY IN STR
 	def _get_max_item_len(self, value):
 		"""Get the length of the longest item.
 		 Agnostic to number of dimensions"""

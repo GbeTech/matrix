@@ -1,4 +1,4 @@
-from src.matrix import Matrix, Vector
+from src.matrix import Matrix
 from ..boilerplate import Boilerplate
 
 bp = Boilerplate()

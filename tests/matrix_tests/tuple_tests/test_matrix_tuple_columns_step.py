@@ -1,5 +1,5 @@
 from ...boilerplate import Boilerplate
-from src.matrix import Vector, Matrix
+from src.matrix import Matrix
 
 bp = Boilerplate()
 
@@ -36,5 +36,4 @@ def test_get_shallow_copy():
 	                        ['C', 'G', 'L'],
 	                        ['D', 'H', 'M'],
 	                        [None, 'I', None]],
-	              res_type=Matrix,
-	              index_type_pairs={0: Vector, 1: Vector, 2: Vector, 3: Vector, 4: Vector})
+	              res_type=Matrix)

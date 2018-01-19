@@ -1,5 +1,5 @@
 from ...boilerplate import Boilerplate
-from src.matrix import Vector
+
 
 bp = Boilerplate()
 
@@ -14,4 +14,4 @@ def test_colon_2():
 def test_colon_rev2():
 	bp.basic_test(res=bp.m[:-2, :],
 	                 expected=['A', 'B', 'C', 'D', None],
-	                 res_type=Vector)
+	                 res_type=list)

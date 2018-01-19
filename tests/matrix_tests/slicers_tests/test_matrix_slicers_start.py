@@ -1,5 +1,5 @@
 from ...boilerplate import Boilerplate
-from src.matrix import Vector
+from src.matrix import Matrix
 
 bp = Boilerplate()
 
@@ -16,8 +16,7 @@ def test_rev1_colon():
 	              expected=[['A', 'B', 'C', 'D', None],
 	                        ['E', 'F', 'G', 'H', 'I'],
 	                        ['J', 'K', 'L', 'M', None]],
-	              res_type=list,
-	              index_type_pairs={0: Vector, 1: Vector, 2: Vector})
+	              res_type=list)
 
 	# shallow copy
-	bp.not_is_equal(bp.m[-3:], bp.m)
+	bp.not_is_a(bp.m[-3:], bp.m)
