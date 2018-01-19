@@ -12,19 +12,25 @@ class Vector:
 	def __init__(self, value=None):
 		self.value = value if value is not None else []
 
+	def __setitem__(self, key, value):
+		print('set item!')
+
 	def __getitem__(self, item):
-		ret = ""
+		ret = None
 
 		if isinstance(item, slice):
-			slice_tup = item.start, item.stop, item.step
 
 			# If item is [:]
-			if all(sl is None for sl in slice_tup):
+			if all(sl is None for sl in (item.start, item.stop, item.step)):
 				raise NotImplementedError("got [:] for Vector")
+
 			# If item is [:n]
-			elif slice_tup[0] is None:
+			elif item.start is None:
 				ret = self.value[item]
 				ret = Matrix.remove_redundant_nesting(ret)
+			else:
+
+				ret = self.value[item]
 
 		else:
 			ret = self.value[item]
@@ -196,27 +202,40 @@ class Matrix:
 			# [?:?:? , ?]
 			if isinstance(i, slice):
 				temp = self[i]
-				slice_tup = i.start, i.stop, i.step
 
 				# [: , :-1:2]
 				# #[['A', 'E', 'J'],
 				#  ['C', 'G', 'L']]
-				if all(sl is None for sl in slice_tup):
+				if all(_ is None for _ in (i.start, i.stop, i.step)):
 					transposed = self.transpose(temp)
 					ret = transposed[j]
 
 				# [1:, :]
 				# [['E', 'F', 'G', 'H', 'I'],
 				# ['J', 'K', 'L', 'M', None]],
+				elif all(_ is None for _ in (j.start, j.stop, j.step)):
+					ret = temp
+
+				# [0:2, 0:3]
+				# [['A', 'B', 'C'],
+				# ['E', 'F', 'G']]
 				else:
+					for vec_idx, vec in enumerate(temp):
+						# TODO: NOT HACKY KAKY!!!
+						sliced = vec[j]
+						if isinstance(sliced, list):
+							temp[vec_idx].value = sliced
+						else:
+							temp[vec_idx] = sliced
+					# temp[vec_idx] = temp[vec_idx][j]
+					# [v.value.remove(i) for i in v[j]]
 					ret = temp
 
 			# [1 , ?:?:?]
 			elif isinstance(j, slice):
-				slice_tup = j.start, j.stop, j.step
 
 				# [1,:] ['E', 'F', 'G', 'H', 'I']
-				if all(sl is None for sl in slice_tup):
+				if all(_ is None for _ in (j.start, j.stop, j.step)):
 					ret = self.matrix[i]
 				else:
 					raise NotImplementedError
@@ -226,10 +245,9 @@ class Matrix:
 
 		# [?:?:?]
 		elif isinstance(item, slice):
-			slice_tup = item.start, item.stop, item.step
 
 			# [:]    SPECIAL CASE: shallow copy
-			if all(sl is None for sl in slice_tup):
+			if all(_ is None for _ in (item.start, item.stop, item.step)):
 				from copy import copy
 				ret = copy(self)
 
