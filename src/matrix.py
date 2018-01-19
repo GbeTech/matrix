@@ -263,18 +263,9 @@ class Matrix:
 
 	def __eq__(self, other):
 		if isinstance(other, Matrix):
-			return ((self.value_raw == other.value_raw) and (
-					self.value_depth == other.value_depth) and (
-					        self.matrix == other.matrix) and (
-					        self.col_count == other.col_count) and (
-					        self.row_count == other.row_count))
+			return self.value_raw == other.value_raw
 		else:
-			return self.value_raw==other
-			# other_depth = self._get_nesting_depth(other)
-		# return ((self.value_raw == other) and (
-		# 		self.value_depth == other_depth) and (
-		# 		        self.col_count == self._get_col_count(other, other_depth)) and (
-		# 		        self.row_count == self._get_row_count(other)))
+			return self.value_raw == other
 
 	# NO USAGE
 	def _get_col_raw(self, col_idx):

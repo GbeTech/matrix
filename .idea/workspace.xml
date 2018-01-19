@@ -16,8 +16,8 @@
       <file leaf-file-name="matrix.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/matrix.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="892">
-              <caret line="276" column="70" lean-forward="true" selection-start-line="272" selection-start-column="14" selection-end-line="276" selection-end-column="70" />
+            <state relative-caret-position="256">
+              <caret line="266" column="13" lean-forward="true" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="13" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
                 <element signature="e#1259#1293#0" expanded="false" />
@@ -26,10 +26,10 @@
                 <element signature="e#3004#3240#0" expanded="false" />
                 <element signature="e#3511#3519#0" expanded="false" />
                 <element signature="e#5563#5586#0" expanded="false" />
-                <element signature="e#7247#7337#0" expanded="false" />
-                <element signature="e#7384#7706#0" expanded="false" />
-                <element signature="e#7915#7942#0" expanded="false" />
-                <element signature="e#8273#8662#0" expanded="false" />
+                <element signature="e#6760#6850#0" expanded="false" />
+                <element signature="e#6897#7219#0" expanded="false" />
+                <element signature="e#7428#7455#0" expanded="false" />
+                <element signature="e#7786#8175#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -480,9 +480,6 @@
     <history-entry file="py_test_for_tests_matrix_tests_combined_tests_test_matrix_combined_test_01 - 2018.01.19 at 05h 41m 49s.xml">
       <configuration name="py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_01" configurationId="tests" />
     </history-entry>
-    <history-entry file="py_test_for_tests_matrix_tests_combined_tests_test_matrix_combined_test_02 - 2018.01.19 at 05h 35m 39s.xml">
-      <configuration name="py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_02" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_for_tests_matrix_tests_combined_tests_test_matrix_combined_test_02 - 2018.01.19 at 05h 35m 51s.xml">
       <configuration name="py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_02" configurationId="tests" />
     </history-entry>
@@ -505,6 +502,9 @@
       <configuration name="py.test in tests" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_tests - 2018.01.19 at 05h 44m 57s.xml">
+      <configuration name="py.test in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_tests - 2018.01.19 at 05h 46m 03s.xml">
       <configuration name="py.test in tests" configurationId="tests" />
     </history-entry>
   </component>
@@ -558,7 +558,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/matrix.py</url>
-          <line>288</line>
+          <line>279</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -568,7 +568,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/matrix.py</url>
-          <line>280</line>
+          <line>271</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -910,8 +910,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/matrix.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="892">
-          <caret line="276" column="70" lean-forward="true" selection-start-line="272" selection-start-column="14" selection-end-line="276" selection-end-column="70" />
+        <state relative-caret-position="256">
+          <caret line="266" column="13" lean-forward="true" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="13" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
             <element signature="e#1259#1293#0" expanded="false" />
@@ -920,10 +920,10 @@
             <element signature="e#3004#3240#0" expanded="false" />
             <element signature="e#3511#3519#0" expanded="false" />
             <element signature="e#5563#5586#0" expanded="false" />
-            <element signature="e#7247#7337#0" expanded="false" />
-            <element signature="e#7384#7706#0" expanded="false" />
-            <element signature="e#7915#7942#0" expanded="false" />
-            <element signature="e#8273#8662#0" expanded="false" />
+            <element signature="e#6760#6850#0" expanded="false" />
+            <element signature="e#6897#7219#0" expanded="false" />
+            <element signature="e#7428#7455#0" expanded="false" />
+            <element signature="e#7786#8175#0" expanded="false" />
           </folding>
         </state>
       </provider>
