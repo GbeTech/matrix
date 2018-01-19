@@ -16,25 +16,17 @@ class Vector:
 		print('set item!')
 
 	def __getitem__(self, item):
-		ret = None
-
-		if isinstance(item, slice):
-
-			# If item is [:]
-			if all(sl is None for sl in (item.start, item.stop, item.step)):
-				raise NotImplementedError("got [:] for Vector")
-
-			# If item is [:n]
-			elif item.start is None:
-				ret = self.value[item]
-				ret = Matrix.remove_redundant_nesting(ret)
-			else:
-
-				ret = self.value[item]
-
-		else:
-			ret = self.value[item]
-
+		# if isinstance(item, slice):
+		#
+		# 	# If item is [:]
+		# 	if all(sl is None for sl in (item.start, item.stop, item.step)):
+		# 		raise NotImplementedError("got [:] for Vector")
+		#
+		# 	else:
+		# 		ret = self.value[item]
+		#
+		# else:
+		ret = self.value[item]
 		return ret
 
 	# def __iter__(self):
@@ -46,9 +38,10 @@ class Vector:
 	def __str__(self):
 		if any(isinstance(i, Vector) for i in self.value) and len(self.value) >= 2:
 			raise NotImplementedError
-		ret = ''.join(str(i) for i in self.value)
+		ret = "Vector: " + ', '.join(str(i) for i in self.value)
 		return ret
 
+	# NO USAGE
 	def append(self, value):
 		self.value.append(value)
 
@@ -151,6 +144,7 @@ class Matrix:
 
 		return depth_count
 
+	# NO USAGE
 	def extend(self, src, other):
 		other_depth = self._get_nesting_depth(other)
 		if other_depth < 2:
@@ -220,16 +214,17 @@ class Matrix:
 				# [['A', 'B', 'C'],
 				# ['E', 'F', 'G']]
 				else:
-					for vec_idx, vec in enumerate(temp):
-						# TODO: NOT HACKY KAKY!!!
-						sliced = vec[j]
-						if isinstance(sliced, list):
-							temp[vec_idx].value = sliced
-						else:
-							temp[vec_idx] = sliced
-					# temp[vec_idx] = temp[vec_idx][j]
-					# [v.value.remove(i) for i in v[j]]
-					ret = temp
+					if isinstance(temp, list):
+						for vec_idx, vec in enumerate(temp):
+							# TODO: NOT HACKY KAKY!!!
+							sliced = vec[j]
+							if isinstance(sliced, list):
+								temp[vec_idx].value = sliced
+							else:
+								temp[vec_idx] = sliced
+						ret = temp
+					else:
+						ret = temp[j]
 
 			# [1 , ?:?:?]
 			elif isinstance(j, slice):
