@@ -2,50 +2,6 @@ from typing import List, Union
 from helpers import strhelp
 
 
-# from .utils import transform
-
-
-# TODO: Custom index titles
-# TODO: Check unequal col/row lengths cases
-
-# class Vector:
-# 	def __init__(self, value=None):
-# 		self.value = value if value is not None else []
-#
-# 	def __setitem__(self, key, value):
-# 		print('set item!')
-#
-# 	def __getitem__(self, item):
-# 		# if isinstance(item, slice):
-# 		#
-# 		# 	# If item is [:]
-# 		# 	if all(sl is None for sl in (item.start, item.stop, item.step)):
-# 		# 		raise NotImplementedError("got [:] for Vector")
-# 		#
-# 		# 	else:
-# 		# 		ret = self.value[item]
-# 		#
-# 		# else:
-# 		ret = self.value[item]
-# 		return ret
-#
-# 	# def __iter__(self):
-# 	# 	yield self.value
-#
-# 	def __eq__(self, other):
-# 		return self.value == other
-#
-# 	def __str__(self):
-# 		if any(isinstance(i, Vector) for i in self.value) and len(self.value) >= 2:
-# 			raise NotImplementedError
-# 		ret = "Vector: " + ', '.join(str(i) for i in self.value)
-# 		return ret
-#
-# 	# NO USAGE
-# 	def append(self, value):
-# 		self.value.append(value)
-
-
 class Matrix:
 
 	def __init__(self, value: Union[list, str, int] = None):
@@ -54,7 +10,6 @@ class Matrix:
 			value = [['A', 'B', 'C', 'D', None],
 			         ['E', 'F', 'G', 'H', 'I'],
 			         ['J', 'K', 'L', 'M', None]]
-		# self.value_raw: List[Union[str, int]] = self._get_raw_from_value(value)
 		self.value_raw = value
 
 		self.value_depth = self._get_nesting_depth(value)
@@ -314,11 +269,12 @@ class Matrix:
 					        self.col_count == other.col_count) and (
 					        self.row_count == other.row_count))
 		else:
-			other_depth = self._get_nesting_depth(other)
-			return ((self.value_raw == other) and (
-					self.value_depth == other_depth) and (
-					        self.col_count == self._get_col_count(other, other_depth)) and (
-					        self.row_count == self._get_row_count(other)))
+			return self.value_raw==other
+			# other_depth = self._get_nesting_depth(other)
+		# return ((self.value_raw == other) and (
+		# 		self.value_depth == other_depth) and (
+		# 		        self.col_count == self._get_col_count(other, other_depth)) and (
+		# 		        self.row_count == self._get_row_count(other)))
 
 	# NO USAGE
 	def _get_col_raw(self, col_idx):

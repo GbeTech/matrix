@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5cc688f-8518-4b4f-b0c8-b5a901f137a3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/tests/matrix_tests/combined_tests/test_matrix_combined.py" afterPath="$PROJECT_DIR$/tests/matrix_tests/combined_tests/test_matrix_combined.py" />
+      <change beforePath="$PROJECT_DIR$/src/matrix.py" afterPath="$PROJECT_DIR$/src/matrix.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,69 +12,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.49602932">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="750">
-          <file leaf-file-name="matrix.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/matrix.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="361">
-                  <caret line="263" column="0" lean-forward="false" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#30#0" expanded="true" />
-                    <element signature="e#61#91#0" expanded="false" />
-                    <element signature="e#2340#2374#0" expanded="false" />
-                    <element signature="e#3140#3458#0" expanded="false" />
-                    <element signature="e#3532#3733#0" expanded="false" />
-                    <element signature="e#4085#4321#0" expanded="false" />
-                    <element signature="e#4592#4600#0" expanded="false" />
-                    <element signature="e#6644#6667#0" expanded="false" />
-                    <element signature="e#8290#8380#0" expanded="false" />
-                    <element signature="e#8427#8749#0" expanded="false" />
-                    <element signature="e#8958#8985#0" expanded="false" />
-                    <element signature="e#9316#9705#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="scratch_41.py" pinned="false" current-in-tab="false">
-            <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_41.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="477">
-                  <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="test_matrix_combined.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tests/matrix_tests/combined_tests/test_matrix_combined.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="717">
-                  <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="boilerplate.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tests/boilerplate.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="361">
-                  <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="750">
+      <file leaf-file-name="matrix.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/matrix.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="892">
+              <caret line="276" column="70" lean-forward="true" selection-start-line="272" selection-start-column="14" selection-end-line="276" selection-end-column="70" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+                <element signature="e#1259#1293#0" expanded="false" />
+                <element signature="e#2059#2377#0" expanded="false" />
+                <element signature="e#2451#2652#0" expanded="false" />
+                <element signature="e#3004#3240#0" expanded="false" />
+                <element signature="e#3511#3519#0" expanded="false" />
+                <element signature="e#5563#5586#0" expanded="false" />
+                <element signature="e#7247#7337#0" expanded="false" />
+                <element signature="e#7384#7706#0" expanded="false" />
+                <element signature="e#7915#7942#0" expanded="false" />
+                <element signature="e#8273#8662#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -191,8 +152,8 @@
         <option value="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_rows_step.py" />
         <option value="$PROJECT_DIR$/tests/matrix_tests/tuple_tests/test_matrix_tuple_rows_stop_step.py" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_41.py" />
-        <option value="$PROJECT_DIR$/src/matrix.py" />
         <option value="$PROJECT_DIR$/tests/matrix_tests/combined_tests/test_matrix_combined.py" />
+        <option value="$PROJECT_DIR$/src/matrix.py" />
       </list>
     </option>
   </component>
@@ -332,6 +293,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="matrix" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="matrix" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/matrix.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -404,21 +383,6 @@
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_01" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="matrix" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.matrix_tests.combined_tests.test_matrix_combined.test_01&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
     <configuration name="py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_02" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -481,18 +445,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in tests" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_01" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_02" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_03" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_rev1_colon_rev4_colon_rev2" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_02" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_03" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_rev1_colon_rev4_colon_rev2" />
+      <item index="4" class="java.lang.String" itemvalue="Python.matrix" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python tests.py.test in tests" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_rev1_colon_rev4_colon_rev2" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_03" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_02" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_01" />
+        <item index="1" class="java.lang.String" itemvalue="Python.matrix" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_rev1_colon_rev4_colon_rev2" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_03" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_02" />
       </list>
     </recent_temporary>
   </component>
@@ -513,9 +477,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="py_test_for_tests_matrix_tests_combined_tests_test_matrix_combined_test_01 - 2018.01.19 at 05h 35m 26s.xml">
-      <configuration name="py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_01" configurationId="tests" />
-    </history-entry>
     <history-entry file="py_test_for_tests_matrix_tests_combined_tests_test_matrix_combined_test_01 - 2018.01.19 at 05h 41m 49s.xml">
       <configuration name="py.test for tests.matrix_tests.combined_tests.test_matrix_combined.test_01" configurationId="tests" />
     </history-entry>
@@ -541,6 +502,9 @@
       <configuration name="py.test in tests" configurationId="tests" />
     </history-entry>
     <history-entry file="py_test_in_tests - 2018.01.19 at 05h 43m 00s.xml">
+      <configuration name="py.test in tests" configurationId="tests" />
+    </history-entry>
+    <history-entry file="py_test_in_tests - 2018.01.19 at 05h 44m 57s.xml">
       <configuration name="py.test in tests" configurationId="tests" />
     </history-entry>
   </component>
@@ -594,7 +558,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/matrix.py</url>
-          <line>332</line>
+          <line>288</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -604,12 +568,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/matrix.py</url>
-          <line>324</line>
+          <line>280</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/matrix.py</url>
-          <line>218</line>
+          <line>173</line>
           <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
@@ -928,24 +892,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/matrix.py">
+    <entry file="file://$PROJECT_DIR$/tests/boilerplate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="263" column="0" lean-forward="false" selection-start-line="263" selection-start-column="0" selection-end-line="263" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <element signature="e#61#91#0" expanded="false" />
-            <element signature="e#2340#2374#0" expanded="false" />
-            <element signature="e#3140#3458#0" expanded="false" />
-            <element signature="e#3532#3733#0" expanded="false" />
-            <element signature="e#4085#4321#0" expanded="false" />
-            <element signature="e#4592#4600#0" expanded="false" />
-            <element signature="e#6644#6667#0" expanded="false" />
-            <element signature="e#8290#8380#0" expanded="false" />
-            <element signature="e#8427#8749#0" expanded="false" />
-            <element signature="e#8958#8985#0" expanded="false" />
-            <element signature="e#9316#9705#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="626">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -957,11 +908,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/boilerplate.py">
+    <entry file="file://$PROJECT_DIR$/src/matrix.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="892">
+          <caret line="276" column="70" lean-forward="true" selection-start-line="272" selection-start-column="14" selection-end-line="276" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#1259#1293#0" expanded="false" />
+            <element signature="e#2059#2377#0" expanded="false" />
+            <element signature="e#2451#2652#0" expanded="false" />
+            <element signature="e#3004#3240#0" expanded="false" />
+            <element signature="e#3511#3519#0" expanded="false" />
+            <element signature="e#5563#5586#0" expanded="false" />
+            <element signature="e#7247#7337#0" expanded="false" />
+            <element signature="e#7384#7706#0" expanded="false" />
+            <element signature="e#7915#7942#0" expanded="false" />
+            <element signature="e#8273#8662#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
