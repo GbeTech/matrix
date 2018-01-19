@@ -12,14 +12,10 @@ class Matrix:
 			         ['J', 'K', 'L', 'M', None]]
 		self.value_raw = value
 
-		self.value_depth = self._get_nesting_depth(value)
+		self.value_depth = self._get_list_depth(value)
 		self.matrix: List[list] = self._generate_matrix_from_value(value, self.value_depth)
 		self.col_count = self._get_col_count(value, self.value_depth)
-		# self.row_count = len(value) if value else 1
 		self.row_count = self._get_row_count(self.value_raw)
-
-	def _get_raw_from_value(self, value) -> List[Union[str, int]]:
-		raise NotImplementedError("_get_raw_from_value")
 
 	@staticmethod
 	def _get_row_count(value):
@@ -40,29 +36,6 @@ class Matrix:
 
 		return col_count
 
-	# self.matrix: List[self.Row] = []
-	# if isinstance(value, list):
-	# 	# got a list of something
-	# 	if any(isinstance(item, self.Row) for item in value):
-	# 		# list of Rows
-	# 		if any(not isinstance(item, self.Row) for item in value):
-	# 			# shouldn't happen
-	# 			raise TypeError('got MIXED ROW AND STR WAT')
-	# 		for item in value:
-	# 			# append the Row items, no need to box them
-	# 			self.matrix.append(item)
-	# 	else:
-	# 		# list of non-Rows
-	# 		for item in value:
-	# 			# box the items in Rows and append results
-	# 			self.matrix.append(self.Row(item))
-	# else:
-	# 	if isinstance(value, self.Row):
-	# 		raise TypeError('GOT A SINGLE Row handle me')
-	# 	else:
-	# 		self.matrix.append(self.Row(value))
-
-	# test 5
 	def _generate_matrix_from_value(self, value, value_depth) -> List[list]:
 		matrix = [[]]
 		if value_depth == 0:
@@ -72,44 +45,17 @@ class Matrix:
 		elif value_depth == 2:
 			matrix = value
 		else:
-			value_2d = self._to_2d(value, value_depth)
-			matrix = value_2d
 			raise NotImplementedError("3d+ to 2d conversion not implemented yet.")
 
 		return matrix
 
-	# NO USAGE
-	def _to_2d(self, value, value_depth=None) -> List[list]:
-		if value_depth is not None:
-			for d1 in value:
-				for d2 in value:
-					print('not implemented yet')
-
-		else:
-			value_depth = self._get_nesting_depth(value)
-			return self._to_2d(value, value_depth)
-
-	def _get_nesting_depth(self, value):
-		# TODO: unequal depths, i.e. [1,[a,b,c]]
-		# warn("DO ITERATIVE INSTEAD OF RECURSIVE '_get_nesting_depth'")
+	def _get_list_depth(self, value):
 		depth_count = 0
 		if isinstance(value, list):
 			depth_count += 1
-			if value:
-				depth_count += self._get_nesting_depth(value[0])
+			depth_count += self._get_list_depth(value[0])
 
 		return depth_count
-
-	# NO USAGE
-	def extend(self, src, other):
-		other_depth = self._get_nesting_depth(other)
-		if other_depth < 2:
-			raise TypeError("must get 2d+ matrix")
-		elif other_depth == 2:
-			[src.append(row) for row in other]
-		else:
-			print("got 3d+ matrix, not implemented")
-		return src
 
 	@staticmethod
 	def remove_redundant_nesting(value):
@@ -117,7 +63,6 @@ class Matrix:
 		Return [...] if value is [[...]] (single list in a list)
 		"""
 		if isinstance(value, list) and len(value) == 1:
-			print("Removed redundant nesting")
 			ret = value[0]
 		else:
 			ret = value
@@ -182,19 +127,9 @@ class Matrix:
 					else:
 						raise NotImplementedError('shouldnt happen')
 					ret = temp
-			# else:
 
-			# raise NotImplementedError('Shouldnt happen')
 
-			# [1 , ?:?:?]
-			elif isinstance(j, slice):
-
-				# [1,:] ['E', 'F', 'G', 'H', 'I']
-				if all(_ is None for _ in (j.start, j.stop, j.step)):
-					ret = self.matrix[i]
-				else:
-					raise NotImplementedError
-
+			# [0,???]
 			else:
 				ret = self.matrix[i][j]
 
@@ -217,24 +152,6 @@ class Matrix:
 			ret = self.matrix[item]
 
 		return ret
-
-	# if j in self.columns:
-	# 	# 'j0'
-	# 	if i in self.index:
-	# 		# 'i0','j0'
-	# 		return self.at[i, j]
-	# 	elif isinstance(i, int):
-	# 		# 0,'j0'
-	# 		return self[j][i]
-	# elif isinstance(j, int):
-
-	# 	# j=0
-	# 	if isinstance(i, int):
-	# 		# 0,0
-	# 		return self.iat[i, j]
-	# 	elif i in self.index:
-	# 		# 'i0',0
-	# 		return self[j][i]
 
 	def __str__(self):
 		max_len = self._get_max_item_len(self.value_raw)
@@ -266,27 +183,6 @@ class Matrix:
 			return self.value_raw == other.value_raw
 		else:
 			return self.value_raw == other
-
-	# NO USAGE
-	def _get_col_raw(self, col_idx):
-		col_ret = []
-		for row in self.value_raw:
-			col_ret.append(row[col_idx])
-		return col_ret
-
-	# NO USAGE
-	def _get_transform_raw(self):
-		# TODO: try to prevent un/boxing, manipulate without extracting to raw etc
-		trans_values = []
-		for i in range(self.col_count):
-			trans_row = []
-			for j in range(self.row_count):
-				trans_row.append(self.value_raw[j][i])
-			trans_values.append(trans_row)
-
-		# trans_matrix = Matrix(trans_values)
-
-		return trans_values
 
 	@staticmethod
 	def transpose(collection):

@@ -22,8 +22,34 @@ def test_03():
 	              res_type=list)
 
 
-def test_rev1_colon_rev4_colon_rev2():
+def test_04():
 	bp.basic_test(res=bp.m[-1::-2, -2::-2],
 	              expected=[['M', 'K'],
 	                        ['D', 'B']],
+	              res_type=list)
+
+
+def test_05():
+	bp.basic_test(res=bp.m[1, :2],
+	              expected=['E', 'F'],
+	              res_type=list)
+
+
+def test_06():
+	bp.basic_test(res=bp.m[1, :2:-1],
+	              expected=['I', 'H'],
+	              res_type=list)
+
+
+def test_07():
+	bp.basic_test(res=bp.m[1::-1, :2],
+	              expected=[['E', 'F'],
+	                        ['A', 'B']],
+	              res_type=list)
+
+
+def test_08():
+	bp.basic_test(res=bp.m[1::-1, ::2],
+	              expected=[['E', 'G', 'I'],
+	                        ['A', 'C', None]],
 	              res_type=list)
